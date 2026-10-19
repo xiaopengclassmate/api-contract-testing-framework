@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
+allure-results/
+allure-report/
+reports/
+.env
+data/*.db
+data/*.db-journal
+.mypy_cache/
+.ruff_cache/
+.DS_Store

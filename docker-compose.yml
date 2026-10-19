@@ -1,0 +1,19 @@
+services:
+  order-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/app.db
+      JWT_SECRET: ${JWT_SECRET:-local-docker-secret-change-me-32bytes}
+      JWT_EXPIRE_MINUTES: ${JWT_EXPIRE_MINUTES:-60}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123}
+      PAYMENT_GATEWAY_URL: ${PAYMENT_GATEWAY_URL:-https://payments.example.com/charge}
+      PAYMENT_TIMEOUT_SECONDS: ${PAYMENT_TIMEOUT_SECONDS:-3}
+    volumes:
+      - order-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  order-data:
