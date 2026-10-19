@@ -1,5 +1,8 @@
 # 接口自动化 + 契约测试框架（Order API）
 
+[![api-contract-tests](https://github.com/xiaopengclassmate/api-contract-testing-framework/actions/workflows/api-tests.yml/badge.svg)](https://github.com/xiaopengclassmate/api-contract-testing-framework/actions/workflows/api-tests.yml)
+[![GitHub](https://img.shields.io/badge/GitHub-api--contract--testing--framework-181717?logo=github)](https://github.com/xiaopengclassmate/api-contract-testing-framework)
+
 一个可以直接运行、演示、进 CI 的接口测试项目：包含一个真实可跑的 FastAPI 订单服务，以及围绕它构建的 **HTTP 自动化、JSON Schema 契约测试、数据库校验、外部支付网关 Mock、Hypothesis 属性测试、接口安全基线** 六层测试体系。
 
 项目重点不是“多写几个 requests 断言”，而是展示企业接口测试中真正有价值的工程能力：
@@ -34,6 +37,10 @@ app 服务端代码覆盖率：100%（247 statements，0 miss）
 | 第三方契约（可选） | `external_tests/` | 2 | JSONPlaceholder 公开 API 契约校验 |
 
 > `external_tests/` 依赖外网，默认不进入主测试集，只在 CI 定时任务或手动触发时运行。
+
+- 代码仓库：<https://github.com/xiaopengclassmate/api-contract-testing-framework>
+- GitHub Actions：<https://github.com/xiaopengclassmate/api-contract-testing-framework/actions/workflows/api-tests.yml>（`main` 推送实测：测试 Job 与 Docker Job 均通过）
+- 在线 Allure：<https://xiaopengclassmate.github.io/api-contract-testing-framework/>（需在仓库 **Settings → Pages** 选择 `gh-pages` 分支后生效）
 
 ![Order API Swagger UI](docs/swagger.png)
 

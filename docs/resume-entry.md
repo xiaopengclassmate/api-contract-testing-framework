@@ -11,6 +11,10 @@
 > `C:\Users\15830\Desktop\测试简历\build_resume_pdf.py`。
 >
 > 面试现场怎么演示：见 [`interview-demo.md`](interview-demo.md)。
+>
+> 项目仓库：<https://github.com/xiaopengclassmate/api-contract-testing-framework>
+> GitHub Actions：<https://github.com/xiaopengclassmate/api-contract-testing-framework/actions/workflows/api-tests.yml>
+> 在线 Allure：<https://xiaopengclassmate.github.io/api-contract-testing-framework/>（启用 Pages 后生效）
 
 ## 完整版（推荐，5 条）
 
@@ -54,6 +58,7 @@
 
 | 问题 | 回答要点 |
 |---|---|
+| 项目代码在哪？ | GitHub 公开仓库 `xiaopengclassmate/api-contract-testing-framework`；`main` 推送后 Actions 中测试 Job 与 Docker Job 均通过，Allure 报告发布到 `gh-pages`。 |
 | 为什么是 87 条？ | 自包含 SUT 的高价值用例，按 41 接口 / 16 契约 / 4 数据库 / 9 Mock / 13 安全 / 4 属性分层；另有 2 条第三方契约用例。重点在覆盖质量和分层，不是堆数量。 |
 | 100% 覆盖率怎么算的？ | 被测服务 247 条语句、0 miss，统计的是 `app/` 而不是测试代码；覆盖率不等于质量，另有契约负例、故障注入、属性测试和安全基线。 |
 | 契约测试和接口测试区别？ | 接口测试验证行为和业务规则；契约测试验证提供方/消费方的字段、类型、必填、枚举约定。当前是 Schema-based，后续可升级 Pact。 |
@@ -89,3 +94,5 @@
 | 服务端覆盖率 | 100%（247 statements） | `pytest --cov=app` |
 | 本地耗时 | 约 13 秒 | Windows / Python 3.11.4 |
 | 可选第三方契约 | 2 passed | `pytest external_tests` |
+| GitHub Actions | success | `api-contract-tests` + `docker-build` |
+| 远程仓库 | public | <https://github.com/xiaopengclassmate/api-contract-testing-framework> |
