@@ -1,0 +1,5 @@
+POST http://127.0.0.1:43661/api/v1/orders
+status: 422
+elapsed: 7 ms
+
+{"detail":[{"type":"greater_than_equal","loc":["body","items",0,"quantity"],"msg":"Input should be greater than or equal to 1","input":0,"ctx":{"ge":1}}]}

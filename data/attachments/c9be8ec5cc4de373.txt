@@ -1,0 +1,5 @@
+POST http://127.0.0.1:43661/api/v1/orders
+status: 201
+elapsed: 13 ms
+
+{"id":"c600b586-5bc9-4a52-ac4f-5b802a6fe801","customer_id":"property-afbf7aa1","status":"PENDING","total_amount":16231.57,"currency":"USD","payment_reference":null,"created_at":"2026-10-19T14:55:50+00:00","updated_at":"2026-10-19T14:55:50+00:00","items":[{"sku":"589297bc-2bfe-4a3c-16eb-bc526b449e99","quantity":81,"unit_price":187.64,"subtotal":15198.84},{"sku":"8d6c9c24-bd11-1d2d-9da3-d48a0eda8b70","quantity":6,"unit_price":4.99,"subtotal":29.94},{"sku":"393d9fe2-8d33-1f48-cde9-00f5bbea1cc9","quantity":100,"unit_price":0.72,"subtotal":72.0},{"sku":"c9d404a0-be87-d810-d1f0-94769a829b1e","quantity":33,"unit_price":5.51,"subtotal":181.83},{"sku":"5d592053-ac03-3608-99fe-757d39f60016","quantity":62,"unit_price":12.08,"subtotal":748.96}]}

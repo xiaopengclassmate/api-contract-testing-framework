@@ -1,0 +1,5 @@
+POST http://127.0.0.1:43661/api/v1/orders
+status: 422
+elapsed: 7 ms
+
+{"detail":[{"type":"string_pattern_mismatch","loc":["body","currency"],"msg":"String should match pattern '^[A-Z]{3}$'","input":"usd","ctx":{"pattern":"^[A-Z]{3}$"}}]}
