@@ -1,0 +1,5 @@
+POST http://127.0.0.1:44243/api/v1/orders
+status: 422
+elapsed: 5 ms
+
+{"detail":[{"type":"json_invalid","loc":["body",1],"msg":"JSON decode error","input":{},"ctx":{"error":"Expecting property name enclosed in double quotes"}}]}

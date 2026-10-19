@@ -1,0 +1,5 @@
+POST http://127.0.0.1:44243/api/v1/orders/49a9e6cc-a6a9-44ff-9fa2-19d148553267/cancel
+status: 200
+elapsed: 10 ms
+
+{"id":"49a9e6cc-a6a9-44ff-9fa2-19d148553267","customer_id":"property-dc028951","status":"CANCELLED","total_amount":12389.75,"currency":"USD","payment_reference":null,"created_at":"2026-10-19T14:59:43+00:00","updated_at":"2026-10-19T14:59:43+00:00","items":[{"sku":"feb326ce-c1ae-407b-4411-4d430679f386","quantity":72,"unit_price":46.37,"subtotal":3338.64},{"sku":"2106f551-e1aa-73c3-8d0e-da29202e721a","quantity":20,"unit_price":5.94,"subtotal":118.8},{"sku":"a5a80298-2285-bc10-cc3c-9b4c4f6fd3b7","quantity":41,"unit_price":77.87,"subtotal":3192.67},{"sku":"49dfa883-abb3-825c-06a8-456068eed111","quantity":94,"unit_price":61.06,"subtotal":5739.64}]}

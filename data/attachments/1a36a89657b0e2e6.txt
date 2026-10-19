@@ -1,5 +1,0 @@
-POST http://127.0.0.1:43661/api/v1/auth/token
-status: 200
-elapsed: 6 ms
-
-{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc5MjQyMTc0OSwiZXhwIjoxNzkyNDI1MzQ5fQ.KLOwssA4KQXMtb7RsJljp04D7BbdKv3LreVvGnSXYR4","token_type":"bearer","expires_in":3600}

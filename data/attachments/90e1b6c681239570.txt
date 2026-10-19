@@ -1,5 +1,0 @@
-POST http://127.0.0.1:43661/api/v1/orders/00000000-0000-0000-0000-000000000000/pay
-status: 404
-elapsed: 7 ms
-
-{"detail":"Order not found"}

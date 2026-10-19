@@ -1,5 +1,0 @@
-POST http://127.0.0.1:43661/api/v1/orders/1a16652a-2b79-464b-8411-b44114131fda/pay
-status: 502
-elapsed: 11 ms
-
-{"detail":"Payment gateway error: gateway returned no payment reference"}

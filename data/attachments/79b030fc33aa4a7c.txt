@@ -1,5 +1,0 @@
-DELETE http://127.0.0.1:43661/api/v1/orders/1f39e05f-026d-44db-b2d2-8d00949eec27
-status: 404
-elapsed: 7 ms
-
-{"detail":"Order not found"}

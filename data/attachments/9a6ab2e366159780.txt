@@ -1,5 +1,0 @@
-POST http://127.0.0.1:43661/api/v1/orders
-status: 422
-elapsed: 7 ms
-
-{"detail":[{"type":"string_too_long","loc":["body","customer_id"],"msg":"String should have at most 64 characters","input":"customer-0123456789-0123456789-0123456789-0123456789-0123456789-0123456789","ctx":{"max_length":64}}]}

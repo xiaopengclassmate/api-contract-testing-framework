@@ -1,0 +1,5 @@
+POST http://127.0.0.1:44243/api/v1/orders
+status: 422
+elapsed: 7 ms
+
+{"detail":[{"type":"less_than_equal","loc":["body","items",0,"quantity"],"msg":"Input should be less than or equal to 100","input":101,"ctx":{"le":100}}]}
