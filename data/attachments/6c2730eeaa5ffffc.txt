@@ -1,0 +1,5 @@
+GET http://127.0.0.1:37559/api/v1/orders/68ac6fa3-3c96-433f-9854-f53ab3876d7a
+status: 200
+elapsed: 5 ms
+
+{"id":"68ac6fa3-3c96-433f-9854-f53ab3876d7a","customer_id":"customer-da0743a7","status":"PENDING","total_amount":44.98,"currency":"USD","payment_reference":null,"created_at":"2026-10-26T07:16:59+00:00","updated_at":"2026-10-26T07:16:59+00:00","items":[{"sku":"SKU-001","quantity":2,"unit_price":19.99,"subtotal":39.98},{"sku":"SKU-002","quantity":1,"unit_price":5.0,"subtotal":5.0}]}

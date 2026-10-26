@@ -1,0 +1,5 @@
+POST http://127.0.0.1:37559/api/v1/orders/4a08a6c0-730b-41e2-a8ca-3e68fa13ccde/cancel
+status: 200
+elapsed: 5 ms
+
+{"id":"4a08a6c0-730b-41e2-a8ca-3e68fa13ccde","customer_id":"property-8bf63116","status":"CANCELLED","total_amount":592.85,"currency":"USD","payment_reference":null,"created_at":"2026-10-26T07:17:02+00:00","updated_at":"2026-10-26T07:17:02+00:00","items":[{"sku":"226fa316-dd6a-9289-0ff0-d5f5818f8a17","quantity":10,"unit_price":17.68,"subtotal":176.8},{"sku":"2a0a56d6-e505-1bc9-98a9-798cfc48290b","quantity":53,"unit_price":7.85,"subtotal":416.05}]}

@@ -1,5 +1,0 @@
-GET http://127.0.0.1:44243/api/v1/orders
-status: 200
-elapsed: 7 ms
-
-{"items":[],"total":0,"limit":20,"offset":0}

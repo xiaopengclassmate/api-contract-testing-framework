@@ -1,0 +1,5 @@
+POST http://127.0.0.1:37559/api/v1/orders
+status: 201
+elapsed: 9 ms
+
+{"id":"5ec0dcd5-8c20-44e9-9379-d4a31356c95a","customer_id":"property-ee79c3cc","status":"PENDING","total_amount":143.76,"currency":"USD","payment_reference":null,"created_at":"2026-10-26T07:17:01+00:00","updated_at":"2026-10-26T07:17:01+00:00","items":[{"sku":"e5c85ae4-1c25-277e-efa4-4c2c0eed3272","quantity":39,"unit_price":2.4,"subtotal":93.6},{"sku":"fcca1123-cf32-1b4e-d1a7-32276cab12d0","quantity":66,"unit_price":0.76,"subtotal":50.16}]}

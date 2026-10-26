@@ -1,0 +1,5 @@
+POST http://127.0.0.1:37559/api/v1/orders
+status: 422
+elapsed: 3 ms
+
+{"detail":[{"type":"string_too_short","loc":["body","customer_id"],"msg":"String should have at least 1 character","input":"","ctx":{"min_length":1}}]}

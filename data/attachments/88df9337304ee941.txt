@@ -1,0 +1,5 @@
+POST http://127.0.0.1:37559/api/v1/orders/b4fa2894-9157-44ab-b120-ffcae92e9b54/pay
+status: 200
+elapsed: 7 ms
+
+{"order":{"id":"b4fa2894-9157-44ab-b120-ffcae92e9b54","customer_id":"customer-076327df","status":"PAID","total_amount":44.98,"currency":"USD","payment_reference":"pay_TEST-0002","created_at":"2026-10-26T07:17:00+00:00","updated_at":"2026-10-26T07:17:00+00:00","items":[{"sku":"SKU-001","quantity":2,"unit_price":19.99,"subtotal":39.98},{"sku":"SKU-002","quantity":1,"unit_price":5.0,"subtotal":5.0}]},"payment_reference":"pay_TEST-0002"}

@@ -1,0 +1,5 @@
+POST http://127.0.0.1:37559/api/v1/orders/6edf2712-8ccf-4fe2-be77-a1c77ac72a05/cancel
+status: 409
+elapsed: 4 ms
+
+{"detail":"Paid orders cannot be cancelled"}

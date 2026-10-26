@@ -1,4 +1,0 @@
-DELETE http://127.0.0.1:44243/api/v1/orders/b5e44f2f-9b09-46d2-bd34-1b3b5c352f5e
-status: 204
-elapsed: 8 ms
-

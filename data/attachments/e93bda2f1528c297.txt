@@ -1,0 +1,5 @@
+GET http://127.0.0.1:37559/api/v1/orders
+status: 200
+elapsed: 5 ms
+
+{"items":[{"id":"241d367a-c481-4f1e-9ea0-abef6cbb4bba","customer_id":"客户-咖啡-001","status":"PENDING","total_amount":37.0,"currency":"USD","payment_reference":null,"created_at":"2026-10-26T07:17:00+00:00","updated_at":"2026-10-26T07:17:00+00:00","items":[{"sku":"商品-拿铁-☕","quantity":2,"unit_price":18.5,"subtotal":37.0}]}],"total":1,"limit":20,"offset":0}

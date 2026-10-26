@@ -1,5 +1,0 @@
-GET http://127.0.0.1:44243/api/v1/orders
-status: 200
-elapsed: 9 ms
-
-{"items":[{"id":"2b7e082a-69a2-40a7-976e-48c7aead2545","customer_id":"customer-ccd8567e","status":"PENDING","total_amount":44.98,"currency":"USD","payment_reference":null,"created_at":"2026-10-19T14:59:40+00:00","updated_at":"2026-10-19T14:59:40+00:00","items":[{"sku":"SKU-001","quantity":2,"unit_price":19.99,"subtotal":39.98},{"sku":"SKU-002","quantity":1,"unit_price":5.0,"subtotal":5.0}]},{"id":"faf5d93e-5fa4-4c88-a502-c21cb2d9e970","customer_id":"customer-92a0b7f1","status":"PENDING","total_amount":44.98,"currency":"USD","payment_reference":null,"created_at":"2026-10-19T14:59:40+00:00","updated_at":"2026-10-19T14:59:40+00:00","items":[{"sku":"SKU-001","quantity":2,"unit_price":19.99,"subtotal":39.98},{"sku":"SKU-002","quantity":1,"unit_price":5.0,"subtotal":5.0}]}],"total":3,"limit":2,"offset":0}

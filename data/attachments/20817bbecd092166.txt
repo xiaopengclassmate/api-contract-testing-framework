@@ -1,0 +1,5 @@
+GET http://127.0.0.1:37559/api/v1/orders
+status: 422
+elapsed: 3 ms
+
+{"detail":[{"type":"less_than_equal","loc":["query","limit"],"msg":"Input should be less than or equal to 100","input":"101","ctx":{"le":100}}]}

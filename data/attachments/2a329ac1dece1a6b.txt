@@ -1,0 +1,5 @@
+POST http://127.0.0.1:37559/api/v1/orders/6f8f133b-a73c-4701-b720-c648d9113311/pay
+status: 502
+elapsed: 6 ms
+
+{"detail":"Payment gateway error: gateway returned non-JSON response"}

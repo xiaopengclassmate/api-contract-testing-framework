@@ -1,5 +1,0 @@
-GET http://127.0.0.1:44243/api/v1/orders
-status: 401
-elapsed: 6 ms
-
-{"detail":"Token expired"}

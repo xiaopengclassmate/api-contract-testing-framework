@@ -1,5 +1,0 @@
-POST http://127.0.0.1:44243/api/v1/auth/token
-status: 401
-elapsed: 6 ms
-
-{"detail":"Invalid username or password"}

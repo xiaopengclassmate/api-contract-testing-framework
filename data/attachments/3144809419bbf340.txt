@@ -1,5 +1,0 @@
-POST http://127.0.0.1:44243/api/v1/orders/1dfe702c-e84a-48e3-99de-02c254d732ac/pay
-status: 502
-elapsed: 11 ms
-
-{"detail":"Payment gateway error: gateway returned non-JSON response"}

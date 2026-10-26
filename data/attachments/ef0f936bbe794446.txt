@@ -1,0 +1,4 @@
+DELETE http://127.0.0.1:37559/api/v1/orders/cade0450-6d12-4420-9214-0a4ba7016db5
+status: 204
+elapsed: 5 ms
+
