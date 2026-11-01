@@ -1,0 +1,24 @@
+# 被测服务
+fastapi==0.148.0
+uvicorn==0.54.0
+SQLAlchemy==2.1.5
+PyJWT==2.15.1
+python-dotenv==1.2.4
+requests==2.34.2
+
+# 测试框架
+pytest==9.1.1
+pytest-xdist==3.8.0
+pytest-timeout==2.4.0
+pytest-html==4.2.0
+pytest-cov==7.0.0
+allure-pytest==2.16.2
+
+# 属性测试
+hypothesis==6.170.2
+
+# 契约与 Mock
+jsonschema==4.26.0
+openapi-spec-validator==0.9.0
+responses==0.26.3
+PyYAML==6.0.3

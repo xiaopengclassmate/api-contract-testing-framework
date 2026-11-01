@@ -1,0 +1,7 @@
+# 仅运行被测服务所需依赖（Docker 镜像使用）
+fastapi==0.148.0
+uvicorn==0.54.0
+SQLAlchemy==2.1.5
+PyJWT==2.15.1
+python-dotenv==1.2.4
+requests==2.34.2
