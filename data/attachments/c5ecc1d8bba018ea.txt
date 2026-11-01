@@ -1,0 +1,5 @@
+POST http://127.0.0.1:34141/api/v1/orders/b1535f2e-b7d8-4f45-958a-5c22cb03812e/pay
+status: 404
+elapsed: 4 ms
+
+{"detail":"Order not found"}
