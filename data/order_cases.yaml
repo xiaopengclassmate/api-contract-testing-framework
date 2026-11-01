@@ -1,0 +1,128 @@
+valid:
+  - id: ORDER-VALID-001
+    description: 多商品订单，金额需要精确汇总
+    customer_id: customer-001
+    currency: USD
+    items:
+      - { sku: SKU-001, quantity: 2, unit_price: 19.99 }
+      - { sku: SKU-002, quantity: 1, unit_price: 5.00 }
+
+  - id: ORDER-VALID-002
+    description: 单商品订单
+    customer_id: customer-002
+    currency: CNY
+    items:
+      - { sku: SKU-100, quantity: 3, unit_price: 12.50 }
+
+  - id: ORDER-VALID-003
+    description: 数量与单价上边界
+    customer_id: customer-003
+    currency: EUR
+    items:
+      - { sku: SKU-MAX-001, quantity: 100, unit_price: 1000000.00 }
+
+invalid:
+  - id: ORDER-INVALID-001
+    description: 商品明细为空
+    payload:
+      customer_id: customer-001
+      items: []
+    field: items
+
+  - id: ORDER-INVALID-002
+    description: 商品数量为 0
+    payload:
+      customer_id: customer-001
+      items:
+        - { sku: SKU-001, quantity: 0, unit_price: 10.00 }
+    field: items
+
+  - id: ORDER-INVALID-003
+    description: 单价为负数
+    payload:
+      customer_id: customer-001
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: -1.00 }
+    field: items
+
+  - id: ORDER-INVALID-004
+    description: 缺少 customer_id
+    payload:
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: 10.00 }
+    field: customer_id
+
+  - id: ORDER-INVALID-005
+    description: 币种不是三位大写字母
+    payload:
+      customer_id: customer-001
+      currency: usd
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: 10.00 }
+    field: currency
+
+  - id: ORDER-INVALID-006
+    description: 单笔订单超过 20 个商品行
+    payload:
+      customer_id: customer-001
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-002, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-003, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-004, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-005, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-006, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-007, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-008, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-009, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-010, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-011, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-012, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-013, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-014, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-015, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-016, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-017, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-018, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-019, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-020, quantity: 1, unit_price: 1.00 }
+        - { sku: SKU-021, quantity: 1, unit_price: 1.00 }
+    field: items
+
+  - id: ORDER-INVALID-007
+    description: customer_id 为空字符串
+    payload:
+      customer_id: ""
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: 10.00 }
+    field: customer_id
+
+  - id: ORDER-INVALID-008
+    description: 缺少 items
+    payload:
+      customer_id: customer-001
+    field: items
+
+  - id: ORDER-INVALID-009
+    description: 商品数量超过 100
+    payload:
+      customer_id: customer-001
+      items:
+        - { sku: SKU-001, quantity: 101, unit_price: 10.00 }
+    field: items
+
+  - id: ORDER-INVALID-010
+    description: 单价超过 1,000,000
+    payload:
+      customer_id: customer-001
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: 1000000.01 }
+    field: items
+
+  - id: ORDER-INVALID-011
+    description: customer_id 超过 64 字符
+    payload:
+      customer_id: customer-0123456789-0123456789-0123456789-0123456789-0123456789-0123456789
+      items:
+        - { sku: SKU-001, quantity: 1, unit_price: 10.00 }
+    field: customer_id
