@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-10-26T19:45:38",
+  "profile": "stress",
+  "config": {
+    "base_url": "http://127.0.0.1:63137",
+    "profile": "stress",
+    "users": 40,
+    "duration": 60.0,
+    "spawn_rate": 2,
+    "think_time": 0.1,
+    "timeout": 5.0,
+    "username": "admin",
+    "password": "admin123"
+  },
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_count": 16,
+    "pid": 35880
+  },
+  "elapsed_s": 60.43,
+  "overall": {
+    "requests": 5060,
+    "success": 5056,
+    "failure": 4,
+    "error_rate": 0.0008,
+    "server_error_rate": 0.0,
+    "rps": 83.7,
+    "count": 5060,
+    "avg": 348.3,
+    "p50": 235.6,
+    "p90": 680.1,
+    "p95": 995.7,
+    "p99": 2437.5,
+    "max": 5013.6
+  },
+  "actions": {
+    "login": {
+      "requests": 40,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 40,
+      "avg": 10.8,
+      "p50": 9.6,
+      "p90": 18.1,
+      "p95": 19.1,
+      "p99": 26.8,
+      "max": 26.8
+    },
+    "create_order": {
+      "requests": 2516,
+      "failure": 2,
+      "error_rate": 0.0008,
+      "count": 2514,
+      "avg": 395.9,
+      "p50": 253.9,
+      "p90": 817.4,
+      "p95": 1304.1,
+      "p99": 2578.6,
+      "max": 4722.2
+    },
+    "get_order": {
+      "requests": 997,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 997,
+      "avg": 212.2,
+      "p50": 169.4,
+      "p90": 440.9,
+      "p95": 547.3,
+      "p99": 831.0,
+      "max": 1267.8
+    },
+    "list_orders": {
+      "requests": 724,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 724,
+      "avg": 266.3,
+      "p50": 224.1,
+      "p90": 544.4,
+      "p95": 688.1,
+      "p99": 900.5,
+      "max": 1092.6
+    },
+    "pay_order": {
+      "requests": 533,
+      "failure": 1,
+      "error_rate": 0.0019,
+      "count": 532,
+      "avg": 448.4,
+      "p50": 320.8,
+      "p90": 896.6,
+      "p95": 1284.5,
+      "p99": 2690.1,
+      "max": 4978.5
+    },
+    "cancel_order": {
+      "requests": 250,
+      "failure": 1,
+      "error_rate": 0.004,
+      "count": 249,
+      "avg": 416.0,
+      "p50": 308.0,
+      "p90": 793.3,
+      "p95": 1110.6,
+      "p99": 2375.5,
+      "max": 3857.3
+    }
+  },
+  "errors": [
+    {
+      "key": "create_order | ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=63137): Read timed out. (read timeout=5.0)",
+      "count": 2,
+      "sample": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=63137): Read timed out. (read timeout=5.0)"
+    },
+    {
+      "key": "cancel_order | ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=63137): Read timed out. (read timeout=5.0)",
+      "count": 1,
+      "sample": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=63137): Read timed out. (read timeout=5.0)"
+    },
+    {
+      "key": "pay_order | ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=63137): Read timed out. (read timeout=5.0)",
+      "count": 1,
+      "sample": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=63137): Read timed out. (read timeout=5.0)"
+    }
+  ],
+  "checks": [
+    {
+      "name": "错误率 ≤ 1%",
+      "actual": "0.08%",
+      "pass": true
+    },
+    {
+      "name": "P95 ≤ 500ms",
+      "actual": "995.7ms",
+      "pass": false
+    },
+    {
+      "name": "无 5xx",
+      "actual": "0.00%",
+      "pass": true
+    }
+  ],
+  "hints": [
+    "出现超时：检查线程池/连接池上限，以及同步调用下游（支付网关）是否拖住了请求。",
+    "写接口 `create_order` 的 P95 超过阈值：本服务底层是 SQLite，**单写锁**会让并发写排队，这是当前部署形态的容量上限。判断方法：看 `timeseries.csv` 里 TPS 是否在某个并发点后不再上升。生产应使用 PostgreSQL/MySQL，或把写操作收敛到单队列。"
+  ]
+}

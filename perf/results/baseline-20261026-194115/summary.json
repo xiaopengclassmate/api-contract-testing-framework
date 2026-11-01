@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-10-26T19:41:45",
+  "profile": "baseline",
+  "config": {
+    "base_url": "http://127.0.0.1:52617",
+    "profile": "baseline",
+    "users": 5,
+    "duration": 30,
+    "spawn_rate": 5,
+    "think_time": 0.2,
+    "timeout": 5.0,
+    "username": "admin",
+    "password": "admin123"
+  },
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_count": 16,
+    "pid": 48656
+  },
+  "elapsed_s": 30.13,
+  "overall": {
+    "requests": 1254,
+    "success": 1254,
+    "failure": 0,
+    "error_rate": 0.0,
+    "server_error_rate": 0.0,
+    "rps": 41.6,
+    "count": 1254,
+    "avg": 19.4,
+    "p50": 17.1,
+    "p90": 33.8,
+    "p95": 42.5,
+    "p99": 60.1,
+    "max": 128.5
+  },
+  "actions": {
+    "login": {
+      "requests": 5,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 5,
+      "avg": 8.7,
+      "p50": 5.2,
+      "p90": 22.6,
+      "p95": 22.6,
+      "p99": 22.6,
+      "max": 22.6
+    },
+    "create_order": {
+      "requests": 623,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 623,
+      "avg": 21.8,
+      "p50": 18.3,
+      "p90": 32.1,
+      "p95": 38.5,
+      "p99": 52.1,
+      "max": 128.5
+    },
+    "cancel_order": {
+      "requests": 66,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 66,
+      "avg": 20.7,
+      "p50": 16.8,
+      "p90": 33.5,
+      "p95": 37.5,
+      "p99": 56.9,
+      "max": 56.9
+    },
+    "get_order": {
+      "requests": 245,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 245,
+      "avg": 9.7,
+      "p50": 6.4,
+      "p90": 20.0,
+      "p95": 25.6,
+      "p99": 40.2,
+      "max": 60.5
+    },
+    "list_orders": {
+      "requests": 185,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 185,
+      "avg": 12.7,
+      "p50": 9.0,
+      "p90": 25.3,
+      "p95": 28.8,
+      "p99": 55.8,
+      "max": 63.3
+    },
+    "pay_order": {
+      "requests": 130,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 130,
+      "avg": 35.4,
+      "p50": 32.1,
+      "p90": 54.6,
+      "p95": 60.1,
+      "p99": 104.9,
+      "max": 121.2
+    }
+  },
+  "errors": [],
+  "checks": [
+    {
+      "name": "错误率 ≤ 1%",
+      "actual": "0.00%",
+      "pass": true
+    },
+    {
+      "name": "P95 ≤ 500ms",
+      "actual": "42.5ms",
+      "pass": true
+    },
+    {
+      "name": "无 5xx",
+      "actual": "0.00%",
+      "pass": true
+    }
+  ],
+  "hints": [
+    "本次未发现明显异常，可按同一脚本提高并发继续找拐点。"
+  ]
+}

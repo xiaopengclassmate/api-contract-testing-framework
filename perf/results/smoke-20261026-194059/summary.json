@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-10-26T19:41:09",
+  "profile": "smoke",
+  "config": {
+    "base_url": "http://127.0.0.1:52561",
+    "profile": "smoke",
+    "users": 1,
+    "duration": 10,
+    "spawn_rate": 1,
+    "think_time": 0.5,
+    "timeout": 5.0,
+    "username": "admin",
+    "password": "admin123"
+  },
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_count": 16,
+    "pid": 28132
+  },
+  "elapsed_s": 10.04,
+  "overall": {
+    "requests": 37,
+    "success": 37,
+    "failure": 0,
+    "error_rate": 0.0,
+    "server_error_rate": 0.0,
+    "rps": 3.7,
+    "count": 37,
+    "avg": 23.2,
+    "p50": 26.1,
+    "p90": 40.6,
+    "p95": 48.3,
+    "p99": 49.2,
+    "max": 49.2
+  },
+  "actions": {
+    "login": {
+      "requests": 1,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 1,
+      "avg": 16.8,
+      "p50": 16.8,
+      "p90": 16.8,
+      "p95": 16.8,
+      "p99": 16.8,
+      "max": 16.8
+    },
+    "create_order": {
+      "requests": 18,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 18,
+      "avg": 31.6,
+      "p50": 29.8,
+      "p90": 38.7,
+      "p95": 40.6,
+      "p99": 40.6,
+      "max": 40.6
+    },
+    "list_orders": {
+      "requests": 7,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 7,
+      "avg": 8.0,
+      "p50": 7.5,
+      "p90": 10.4,
+      "p95": 10.4,
+      "p99": 10.4,
+      "max": 10.4
+    },
+    "get_order": {
+      "requests": 7,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 7,
+      "avg": 5.4,
+      "p50": 5.3,
+      "p90": 6.1,
+      "p95": 6.1,
+      "p99": 6.1,
+      "max": 6.1
+    },
+    "pay_order": {
+      "requests": 3,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 3,
+      "avg": 47.7,
+      "p50": 48.3,
+      "p90": 49.2,
+      "p95": 49.2,
+      "p99": 49.2,
+      "max": 49.2
+    },
+    "cancel_order": {
+      "requests": 1,
+      "failure": 0,
+      "error_rate": 0.0,
+      "count": 1,
+      "avg": 37.1,
+      "p50": 37.1,
+      "p90": 37.1,
+      "p95": 37.1,
+      "p99": 37.1,
+      "max": 37.1
+    }
+  },
+  "errors": [],
+  "checks": [
+    {
+      "name": "错误率 ≤ 1%",
+      "actual": "0.00%",
+      "pass": true
+    },
+    {
+      "name": "P95 ≤ 500ms",
+      "actual": "48.3ms",
+      "pass": true
+    },
+    {
+      "name": "无 5xx",
+      "actual": "0.00%",
+      "pass": true
+    }
+  ],
+  "hints": [
+    "`pay_order` 的 P95 明显高于查询接口：支付是同步串行调用外部网关，应关注网关超时设置、重试策略，以及是否该改成异步回调。"
+  ]
+}
