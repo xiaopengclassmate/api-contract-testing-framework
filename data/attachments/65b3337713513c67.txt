@@ -1,0 +1,5 @@
+POST http://127.0.0.1:38661/api/v1/orders/b3ea2141-eb48-4d50-af78-04a3bf0c84f4/pay
+status: 502
+elapsed: 11 ms
+
+{"detail":"Payment gateway error: gateway returned HTTP 500"}

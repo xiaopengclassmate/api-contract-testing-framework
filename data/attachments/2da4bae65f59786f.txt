@@ -1,0 +1,5 @@
+POST http://127.0.0.1:38661/api/v1/orders/7b4aebd3-821c-4052-8c66-97e9d2c1298a/pay
+status: 504
+elapsed: 11 ms
+
+{"detail":"Payment gateway timeout"}

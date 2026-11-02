@@ -1,0 +1,5 @@
+DELETE http://127.0.0.1:38661/api/v1/orders/98fb422b-3057-4eeb-bd00-e05c40ab6d00
+status: 404
+elapsed: 7 ms
+
+{"detail":"Order not found"}
