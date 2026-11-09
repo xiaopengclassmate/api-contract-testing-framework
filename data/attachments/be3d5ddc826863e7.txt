@@ -1,0 +1,5 @@
+POST http://127.0.0.1:35483/api/v1/orders/32bbc6aa-da8d-43e1-bbf8-d3768b6abd56/cancel
+status: 200
+elapsed: 11 ms
+
+{"id":"32bbc6aa-da8d-43e1-bbf8-d3768b6abd56","customer_id":"customer-2ff55b40","status":"CANCELLED","total_amount":44.98,"currency":"USD","payment_reference":null,"created_at":"2026-11-09T08:55:52+00:00","updated_at":"2026-11-09T08:55:52+00:00","items":[{"sku":"SKU-001","quantity":2,"unit_price":19.99,"subtotal":39.98},{"sku":"SKU-002","quantity":1,"unit_price":5.0,"subtotal":5.0}]}

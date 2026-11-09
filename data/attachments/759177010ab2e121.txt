@@ -1,0 +1,5 @@
+POST http://127.0.0.1:35483/api/v1/orders/3522305d-9dd9-4bb1-b97b-6639493305c7/cancel
+status: 200
+elapsed: 12 ms
+
+{"id":"3522305d-9dd9-4bb1-b97b-6639493305c7","customer_id":"property-f8e2a3db","status":"CANCELLED","total_amount":0.02,"currency":"USD","payment_reference":null,"created_at":"2026-11-09T08:55:55+00:00","updated_at":"2026-11-09T08:55:55+00:00","items":[{"sku":"feb326ce-c1ae-407b-4411-4d430679f386","quantity":1,"unit_price":0.02,"subtotal":0.02}]}

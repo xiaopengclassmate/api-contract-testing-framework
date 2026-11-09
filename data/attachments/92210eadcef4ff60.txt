@@ -1,0 +1,5 @@
+POST http://127.0.0.1:35483/api/v1/orders/7413d780-3711-4a36-a346-d6992a23fd7a/pay
+status: 502
+elapsed: 13 ms
+
+{"detail":"Payment gateway error: gateway returned no payment reference"}
