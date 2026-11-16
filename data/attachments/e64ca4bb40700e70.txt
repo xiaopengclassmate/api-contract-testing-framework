@@ -1,5 +1,0 @@
-DELETE http://127.0.0.1:35483/api/v1/orders/f3a67067-5f19-40df-afe4-058f78fb7bee
-status: 409
-elapsed: 8 ms
-
-{"detail":"Paid orders cannot be deleted"}

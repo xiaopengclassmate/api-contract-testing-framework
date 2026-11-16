@@ -1,0 +1,5 @@
+POST http://127.0.0.1:33701/api/v1/orders
+status: 201
+elapsed: 10 ms
+
+{"id":"54861ebb-6d62-4389-aaef-aa7c880e48f7","customer_id":"customer-130d9367","status":"PENDING","total_amount":0.3,"currency":"USD","payment_reference":null,"created_at":"2026-11-16T08:51:32+00:00","updated_at":"2026-11-16T08:51:32+00:00","items":[{"sku":"SKU-ROUND","quantity":3,"unit_price":0.1,"subtotal":0.3}]}

@@ -1,0 +1,4 @@
+DELETE http://127.0.0.1:33701/api/v1/orders/601c039d-8a17-4b75-b35f-143fda053421
+status: 204
+elapsed: 9 ms
+

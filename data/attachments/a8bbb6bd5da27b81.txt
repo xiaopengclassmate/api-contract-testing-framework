@@ -1,0 +1,5 @@
+POST http://127.0.0.1:33701/api/v1/auth/token
+status: 200
+elapsed: 5 ms
+
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc5NDgxOTA5MywiZXhwIjoxNzk0ODIyNjkzfQ.qhHF3V2-I4XHzh-hPkuQ6kX5a0n8McwNYpkYucToZ_4","token_type":"bearer","expires_in":3600}

@@ -1,5 +1,0 @@
-POST http://127.0.0.1:35483/api/v1/orders
-status: 201
-elapsed: 13 ms
-
-{"id":"e521ad49-b05a-4890-b1fd-95645d874483","customer_id":"property-4678ac54","status":"PENDING","total_amount":3.05,"currency":"USD","payment_reference":null,"created_at":"2026-11-09T08:55:53+00:00","updated_at":"2026-11-09T08:55:53+00:00","items":[{"sku":"174f5673-9f32-a923-2363-2c32f8321283","quantity":1,"unit_price":3.05,"subtotal":3.05}]}

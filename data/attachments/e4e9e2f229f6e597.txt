@@ -1,0 +1,5 @@
+POST http://127.0.0.1:33701/api/v1/orders
+status: 201
+elapsed: 10 ms
+
+{"id":"b3d0f578-4990-45e8-b5a7-7dde86194b02","customer_id":"customer-002-f4f8d158","status":"PENDING","total_amount":37.5,"currency":"CNY","payment_reference":null,"created_at":"2026-11-16T08:51:32+00:00","updated_at":"2026-11-16T08:51:32+00:00","items":[{"sku":"SKU-100","quantity":3,"unit_price":12.5,"subtotal":37.5}]}
