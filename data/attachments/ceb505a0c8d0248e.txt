@@ -1,5 +1,0 @@
-POST http://127.0.0.1:33701/api/v1/orders/bf5ce1da-2dfe-41a1-98ca-a65b0790aef8/pay
-status: 409
-elapsed: 7 ms
-
-{"detail":"Only pending orders can be paid"}

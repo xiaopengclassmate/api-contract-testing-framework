@@ -1,5 +1,0 @@
-POST http://127.0.0.1:33701/api/v1/orders/623a65ac-f0f7-4c36-b276-997991dd6616/cancel
-status: 409
-elapsed: 7 ms
-
-{"detail":"Order is already cancelled"}

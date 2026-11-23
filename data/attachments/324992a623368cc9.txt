@@ -1,0 +1,5 @@
+GET http://127.0.0.1:41371/api/v1/orders/8968c606-4a1f-48ff-a5dd-236ce0655e7d
+status: 404
+elapsed: 5 ms
+
+{"detail":"Order not found"}

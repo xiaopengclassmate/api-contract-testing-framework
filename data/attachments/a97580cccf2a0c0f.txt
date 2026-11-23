@@ -1,0 +1,5 @@
+POST http://127.0.0.1:41371/api/v1/orders/62642dbe-eec8-481f-8283-a871fdad2207/cancel
+status: 404
+elapsed: 5 ms
+
+{"detail":"Order not found"}

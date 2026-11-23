@@ -1,0 +1,5 @@
+POST http://127.0.0.1:41371/api/v1/orders
+status: 201
+elapsed: 10 ms
+
+{"id":"15fb2d5d-1995-4437-8f29-91bfd3e6ef26","customer_id":"customer-003-aa1f666c","status":"PENDING","total_amount":100000000.0,"currency":"EUR","payment_reference":null,"created_at":"2026-11-23T10:05:30+00:00","updated_at":"2026-11-23T10:05:30+00:00","items":[{"sku":"SKU-MAX-001","quantity":100,"unit_price":1000000.0,"subtotal":100000000.0}]}

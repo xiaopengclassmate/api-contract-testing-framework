@@ -1,0 +1,5 @@
+POST http://127.0.0.1:41371/api/v1/orders/4ddab8ed-bb4b-42d8-aa56-d959bd4ff33b/pay
+status: 200
+elapsed: 12 ms
+
+{"order":{"id":"4ddab8ed-bb4b-42d8-aa56-d959bd4ff33b","customer_id":"customer-a10f4d24","status":"PAID","total_amount":44.98,"currency":"USD","payment_reference":"pay_TEST-0003","created_at":"2026-11-23T10:05:31+00:00","updated_at":"2026-11-23T10:05:31+00:00","items":[{"sku":"SKU-001","quantity":2,"unit_price":19.99,"subtotal":39.98},{"sku":"SKU-002","quantity":1,"unit_price":5.0,"subtotal":5.0}]},"payment_reference":"pay_TEST-0003"}

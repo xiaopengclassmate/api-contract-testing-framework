@@ -1,0 +1,5 @@
+POST http://127.0.0.1:41371/api/v1/orders
+status: 201
+elapsed: 9 ms
+
+{"id":"15c924b8-ad44-4ce3-9e97-ff99b3d3371b","customer_id":"customer-70d744bc","status":"PENDING","total_amount":40.0,"currency":"USD","payment_reference":null,"created_at":"2026-11-23T10:05:30+00:00","updated_at":"2026-11-23T10:05:30+00:00","items":[{"sku":"SKU-DUP","quantity":1,"unit_price":10.0,"subtotal":10.0},{"sku":"SKU-DUP","quantity":3,"unit_price":10.0,"subtotal":30.0}]}

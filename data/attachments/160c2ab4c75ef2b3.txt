@@ -1,5 +1,0 @@
-POST http://127.0.0.1:33701/api/v1/orders/6e30acee-ba14-4060-9ec4-9e9e2d944998/cancel
-status: 200
-elapsed: 10 ms
-
-{"id":"6e30acee-ba14-4060-9ec4-9e9e2d944998","customer_id":"property-99fae3b4","status":"CANCELLED","total_amount":0.02,"currency":"USD","payment_reference":null,"created_at":"2026-11-16T08:51:35+00:00","updated_at":"2026-11-16T08:51:35+00:00","items":[{"sku":"feb326ce-c1ae-407b-4411-4d430679f386","quantity":1,"unit_price":0.02,"subtotal":0.02}]}

@@ -1,0 +1,5 @@
+GET http://127.0.0.1:41371/api/v1/orders
+status: 422
+elapsed: 4 ms
+
+{"detail":[{"type":"greater_than_equal","loc":["query","limit"],"msg":"Input should be greater than or equal to 1","input":"0","ctx":{"ge":1}}]}

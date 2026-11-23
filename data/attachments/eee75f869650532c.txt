@@ -1,0 +1,4 @@
+DELETE http://127.0.0.1:41371/api/v1/orders/ca668670-c68d-493b-bda9-895b273658f8
+status: 204
+elapsed: 6 ms
+

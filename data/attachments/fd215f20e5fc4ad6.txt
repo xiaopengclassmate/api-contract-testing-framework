@@ -1,0 +1,5 @@
+POST http://127.0.0.1:41371/api/v1/orders/474eda05-8a5d-4522-a6cc-c9e09c9e7ebb/cancel
+status: 409
+elapsed: 5 ms
+
+{"detail":"Order is already cancelled"}
